@@ -41,6 +41,8 @@
             android:button="@drawable/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
             android:text=" Female" >
         </RadioButton>
 
@@ -49,6 +51,8 @@
             android:button="@drawable/male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:checked="true"
 
             android:text=" Male" >
