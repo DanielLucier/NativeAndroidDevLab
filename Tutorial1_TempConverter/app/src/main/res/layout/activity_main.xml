@@ -8,9 +8,13 @@
     android:background="@color/myColor" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/inputValue"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
@@ -23,13 +27,14 @@
             android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:checked="true"
+            android:text="@string/celsius" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="@string/fahrenheit" />
     </RadioGroup>
 
     <Button
@@ -39,7 +44,8 @@
         android:layout_alignStart="@+id/radioGroup1"
         android:layout_below="@+id/radioGroup1"
         android:layout_marginTop="22dp"
-        android:text="Button" />
+        android:onClick="onClick"
+        android:text="@string/calc" />
 
 </LinearLayout>
 
