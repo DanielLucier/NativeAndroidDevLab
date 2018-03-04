@@ -13,8 +13,7 @@ public class MyListActivity extends ListActivity {
         String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
                 "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
                 "Linux", "OS/2" };
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, values);
+        MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this, values);
         setListAdapter(adapter);
     }
 
