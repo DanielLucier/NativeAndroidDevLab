@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.vogella.de.listactivity.adapters.MySimpleArrayAdapter;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Toast;
@@ -39,7 +40,7 @@ public class MyListActivityActionbar extends ListActivity {
 				selectedItem = position;
 
 				// Start the CAB using the ActionMode.Callback defined above
-				mActionMode = MyListActivity.this.startActionMode(mActionModeCallback);
+				mActionMode = MyListActivityActionbar.this.startActionMode(mActionModeCallback);
 				view.setSelected(true);
 				return true;
 			}
@@ -85,7 +86,7 @@ public class MyListActivityActionbar extends ListActivity {
 	};
 
 	private void show() {
-		Toast.makeText(MyListActivity.this, String.valueOf(selectedItem), Toast.LENGTH_LONG).show();
+		Toast.makeText(MyListActivityActionbar.this, String.valueOf(selectedItem), Toast.LENGTH_LONG).show();
 	}
 
 }
