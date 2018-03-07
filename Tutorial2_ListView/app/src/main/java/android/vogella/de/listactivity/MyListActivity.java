@@ -2,6 +2,7 @@ package android.vogella.de.listactivity;
 
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.vogella.de.listactivity.adapters.MyPerformanceArrayAdapter;
 
 public class MyListActivity extends ListActivity {
 	public void onCreate(Bundle icicle) {
